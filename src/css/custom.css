@@ -1,30 +1,139 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
+/* Colores base */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: #ff5733;
+  --ifm-color-primary-dark: #e04e2e;
+  --ifm-color-primary-darker: #c74629;
+  --ifm-color-primary-darkest: #a13a21;
+  --ifm-color-primary-light: #ff6f4d;
+  --ifm-color-primary-lighter: #ff8970;
+  --ifm-color-primary-lightest: #ffad9c;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 87, 51, 0.1);
+
+  --ifm-font-color-base: #ffffff;
+  --ifm-background-color: #0a0a0a;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Modo claro */
+body {
+  background: linear-gradient(135deg, #0a0a0a, #2b0000, #800000);
+  background-attachment: fixed;
+  background-size: 200% 200%;
+  color: var(--ifm-font-color-base);
+}
+
+main {
+  background: linear-gradient(135deg, #1a1a1a, #3a0000, #7a1a1a);
+  color: #ffffff;
+}
+
+a {
+  color: #ffd1b3;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+}
+
+.navbar__link {
+  color: #ffffff;
+}
+
+.navbar__link:hover {
+  color: #ffd1b3;
+}
+
+h1, h2, h3 {
+  color: #ffb199;
+}
+
+/* Botones */
+button {
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+button:hover {
+  background-color: #e74c3c;
+}
+
+/* Código */
+code {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffe0cc;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+pre code {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 16px;
+  border-radius: 8px;
+  color: #ffddcc;
+}
+
+pre code .highlighted-line {
+  background-color: rgba(255, 87, 51, 0.2);
+  display: block;
+}
+
+/* Modo oscuro */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #000000, #220000, #550000);
+  background-attachment: fixed;
+  background-size: 200% 200%;
+  color: #eeeeee;
+}
+
+[data-theme='dark'] main {
+  background: linear-gradient(135deg, #111111, #330000, #660000);
+  color: #ffffff;
+}
+
+[data-theme='dark'] a {
+  color: #ffc1a1;
+}
+
+[data-theme='dark'] a:hover {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .navbar {
+  background-color: rgba(0, 0, 0, 0.95);
+  color: #ffffff;
+}
+
+[data-theme='dark'] .navbar__link {
+  color: #ffffff;
+}
+
+[data-theme='dark'] button {
+  background-color: #ff5733;
+}
+
+[data-theme='dark'] button:hover {
+  background-color: #c70039;
+}
+
+[data-theme='dark'] h1, 
+[data-theme='dark'] h2, 
+[data-theme='dark'] h3 {
+  color: #ffb199;
+}
+
+[data-theme='dark'] code {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffd4bd;
 }
